@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Women Travel Experience 2027</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #f7f7f7; }
+    body { min-width: 320px; font-family: Arial, sans-serif; }
+    main { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 24px 0; }
+    .page { display: block; width: min(100%, 1120px); height: auto; margin: 0 auto 24px; box-shadow: 0 2px 16px rgba(0,0,0,.08); }
+    @media (max-width: 700px) {
+      main { padding: 0; }
+      .page { width: 100%; margin-bottom: 8px; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <main aria-label="Apresentação Women Travel Experience 2027">
+    <script>
+      for (let i = 1; i <= 35; i++) {
+        const page = String(i).padStart(2, '0');
+        const image = document.createElement('img');
+        image.className = 'page';
+        image.src = `pages/page-${page}.jpg`;
+        image.alt = `Página ${i} da apresentação Women Travel Experience 2027`;
+        document.querySelector('main').appendChild(image);
+      }
+    </script>
+  </main>
+</body>
+</html>
